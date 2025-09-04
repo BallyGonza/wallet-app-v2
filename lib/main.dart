@@ -4,6 +4,7 @@ import 'package:template_app/services/services.dart';
 import 'package:template_app/views/views.dart';
 
 Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   await SystemChromeService.setSystemChrome();
 
   runApp(const Main());
